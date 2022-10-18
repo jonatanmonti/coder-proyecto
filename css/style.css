@@ -1,0 +1,424 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*---------------------------------------------------------HEADER--------------------------------------------------------------------*/
+
+header {
+    top: 0;
+    left: 0;
+    background: black;
+}
+
+/*-----------------------------------------------------HEADER-SUPERIOR--------------------------------------------------------------*/
+
+.header__superior {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    color: rgb(37, 153, 255);
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.search input {
+    width: 300px;
+    padding: 10px;
+}
+
+/*----------------------------------------------------------MENU------------------------------------------------------------------*/
+
+.container__menu {
+    height: 70px;
+    background: #222;
+    padding: 0px 20px;
+}
+
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    margin: -24px;
+}
+
+nav {
+    height: 100%;
+}
+
+nav>ul {
+    height: 100%;
+    display: flex;
+}
+
+nav ul li {
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav>ul>li:first-child>a {
+    background-image: url(../img/casa.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 40px;
+}
+
+nav>ul>li:first-child:hover>a {
+    background-image: url(../img/casa.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+nav>ul>li>a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: rgb(37, 153, 255);
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+nav>ul>li>a:hover {
+    transform: scale(1.1);
+    background: rgb(37, 153, 255);
+    color: black;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#selected {
+    transform: scale(1.1);
+    background-color: rgb(37, 153, 255);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*---------------------------------------------------------SUB-MENU----------------------------------------------------------------*/
+
+nav ul li ul {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgb(37, 153, 255);
+    z-index: 10;
+    transition: 300ms ease;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+nav ul li ul:before {
+    /*triangulo del menu secundario*/
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid black;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+nav ul li ul li a {
+    display: block;
+    color: rgb(37, 153, 255);
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+nav ul li ul li a:hover {
+    background: rgb(37, 153, 255);
+    color: black;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgb(37, 153, 255);
+}
+
+/*---------------------------------------------------------ELEMENTOS-RESPONSIVOS----------------------------------------------------*/
+
+.icon__menu {
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+#label__check {
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+#check__menu {
+    display: none;
+}
+
+/*---------------------------------------------------------MAIN-------------------------------------------------------------------*/
+
+.consultas h2{ /*pagina de consultas*/
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #7a7a7a;
+}
+
+.consultas article{ /*pagina de consultas*/
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: white;
+}
+
+.nosotros article{ /*Pagina Historia*/
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: white;
+}
+
+main{
+    padding: 28px;
+    background: #DFDFDF;
+}
+
+.productos__destacados h2{ 
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #7a7a7a;
+}
+
+.productos__destacados .productos__contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.productos__destacados .productos__contenedor div{
+    text-align: center;
+    border: 1px solid black;
+    height: 380px;
+    box-shadow: 10px 10px 28px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 28px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 28px -5px rgba(0,0,0,0.75);
+}
+
+.productos__destacados div img{
+    width: 250px;
+    height: 250px;
+}
+
+.productos__destacados div p{
+    margin-bottom: 20px;
+}
+
+.productos__destacados div a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+/*---------------------------------------------------------ASIDE------------------------------------------------------------------*/
+
+.aside {
+    background-color: aqua;
+    grid-area: aside;
+}
+
+/*---------------------------------------------------------FOOTER----------------------------------------------------------------*/
+
+footer{
+    padding: 24px 48px;
+    background: #222;
+}
+
+.container__footer{
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.box__footer .logo2 img{
+    width: 72px;
+}
+
+.box__footer h2{
+    margin-bottom: 12px;
+    color: rgb(37, 153, 255);
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 8px;
+    color: #DFDFDF;
+    font-weight: 600;
+}
+
+.box__footer a img{
+    width: 40px;
+}
+
+/*---------------------------------------------------------720px-----------------------------------------------------------------*/
+
+@media screen and (max-width: 720px) {
+    .search input{
+        display: none;
+    }
+
+    .header__superior{
+        padding: 10px;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+    nav > ul{
+        flex-direction: column;
+        background-color: #212529;
+        position: fixed;
+        left: 0;
+        top: 158px; 
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav > ul > li > a:hover{
+        transform: scale(1);
+    }
+
+    nav ul li ul{
+        left: 90px;
+    }
+
+    nav > ul > li:hover ul{
+    top: 50px;        
+    }
+
+    nav > ul > li:first-child a{
+        background-position: 20px;
+    }
+
+    #selected{
+        transform: scale(1);
+    }
+
+    label{
+        margin-top: 45px;
+        margin-left: 30px;
+    }
+
+    #label__check{
+        display: block;
+
+    }
+
+    .icon__menu{
+        display: flex;
+    }
+
+    #check__menu:checked ~ nav > ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+        margin-left: -33px;
+        width: 720px;
+    }
+
+    .productos__destacados .productos__contenedor {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .titulo__mapa{
+        display: none;
+    }
+
+    .box__footer iframe{
+        display: none;
+    }
+
+    .logo2{
+        display: none;
+    }
+
+    .box__footer h2{
+        font-weight: 300;
+        margin-bottom: 4px;
+    }
+
+    .box__footer a{
+        font-weight: 100;
+        margin-top: 2px;
+    }
+
+    .productos__destacados div img{
+        width: 175px;
+        height: 175px;
+    }
+
+    .productos__destacados h2{ 
+        margin-bottom: 10px;
+    }
+
+    .productos__destacados .productos__contenedor div{
+        height: 300px;
+    }
+
+    .box__footer a img{
+        width: 30px;
+    }
+
+    footer{
+        padding: 12px 24px;
+    }
+}
