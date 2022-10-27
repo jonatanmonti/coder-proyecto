@@ -1,0 +1,25 @@
+{
+  "name": "preentrega2-monti",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Jonatan Daniel Monti</h1>\r <h3 align=\"center\">A passionate frontend developer from Argentina</h3>",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonatanmonti/coder-proyecto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonatanmonti/coder-proyecto/issues"
+  },
+  "homepage": "https://github.com/jonatanmonti/coder-proyecto#readme"
+}
