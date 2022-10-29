@@ -1,0 +1,78 @@
+/*MAIN*/
+
+main {
+    padding: 28px;
+    background: #DFDFDF;
+
+    .nosotros {
+        article {
+            /*Pagina Historia*/
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: white;
+        }
+    }
+
+    .consultas {
+        h2 {
+            /*pagina de consultas*/
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #7a7a7a;
+        }
+    }
+
+    .consultas {
+        article {
+            /*pagina de consultas*/
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: white;
+        }
+    }
+
+    .productos__destacados {
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #7a7a7a;
+        }
+
+        div {
+            img {
+                width: 250px;
+                height: 250px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                background-color: black;
+                color: white;
+                padding: 5px;
+            }
+        }
+
+        .productos__contenedor {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 100px;
+
+            div {
+                text-align: center;
+                border: 1px solid black;
+                height: 380px;
+                box-shadow: 10px 10px 28px -5px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 10px 10px 28px -5px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 10px 10px 28px -5px rgba(0, 0, 0, 0.75);
+            }
+        }
+    }
+}

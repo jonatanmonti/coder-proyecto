@@ -1,0 +1,118 @@
+@media screen and (max-width: 720px) {
+    .search input{
+        display: none;
+    }
+
+    .header__superior{
+        padding: 10px;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+    nav > ul{
+        flex-direction: column;
+        background-color: #212529;
+        position: fixed;
+        left: 0;
+        top: 158px; 
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav > ul > li > a:hover{
+        transform: scale(1);
+    }
+
+    nav ul li ul{
+        left: 90px;
+    }
+
+    nav > ul > li:hover ul{
+    top: 50px;        
+    }
+
+    nav > ul > li:first-child a{
+        background-position: 20px;
+    }
+
+    #selected{
+        transform: scale(1);
+    }
+
+    label{
+        margin-top: 45px;
+        margin-left: 30px;
+    }
+
+    #label__check{
+        display: block;
+
+    }
+
+    .icon__menu{
+        display: flex;
+    }
+
+    #check__menu:checked ~ nav > ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+        margin-left: -33px;
+        width: 720px;
+    }
+
+    .productos__destacados .productos__contenedor {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .titulo__mapa{
+        display: none;
+    }
+
+    .box__footer iframe{
+        display: none;
+    }
+
+    .logo2{
+        display: none;
+    }
+
+    .box__footer h2{
+        font-weight: 300;
+        margin-bottom: 4px;
+    }
+
+    .box__footer a{
+        font-weight: 100;
+        margin-top: 2px;
+    }
+
+    .productos__destacados div img{
+        width: 175px;
+        height: 175px;
+    }
+
+    .productos__destacados h2{ 
+        margin-bottom: 10px;
+    }
+
+    .productos__destacados .productos__contenedor div{
+        height: 300px;
+    }
+
+    .box__footer a img{
+        width: 30px;
+    }
+
+    footer{
+        padding: 12px 24px;
+    }
+}

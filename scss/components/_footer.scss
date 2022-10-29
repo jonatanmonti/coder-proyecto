@@ -1,0 +1,42 @@
+/*FOOTER*/
+
+footer {
+    padding: 24px 48px;
+    background: #222;
+
+    .container__footer {
+        gap: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1400px;
+        margin: auto;
+
+        .box__footer {
+            display: flex;
+            flex-direction: column;
+
+            .logo2 {
+                img {
+                    width: 72px;
+                }
+            }
+
+            h2 {
+                margin-bottom: 12px;
+                color: rgb(37, 153, 255);
+                font-weight: 700;
+            }
+
+            a {
+                margin-top: 8px;
+                color: #DFDFDF;
+                font-weight: 600;
+
+                img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
