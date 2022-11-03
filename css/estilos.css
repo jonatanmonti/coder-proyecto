@@ -38,7 +38,7 @@
   #label__check {
     display: block; }
   .icon__menu {
-    display: flex; }
+    display: flex !important; }
   #check__menu:checked ~ nav > ul {
     height: 300px;
     visibility: visible;
@@ -134,10 +134,6 @@ header {
       margin-left: -24px;
       /*codigo con >*/
       /*codigo sin >*/ }
-      header .container__menu .menu #selected {
-        transform: scale(1.1);
-        background-color: #2599ff;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
       header .container__menu .menu nav {
         height: 100%; }
         header .container__menu .menu nav > ul {
@@ -236,6 +232,11 @@ header {
   height: 100%;
   display: none;
   align-items: center; }
+
+#selected {
+  transform: scale(1.1);
+  background-color: #2599ff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
 
 /*MAIN*/
 main {

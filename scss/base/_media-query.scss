@@ -56,7 +56,7 @@
     }
 
     .icon__menu{
-        display: flex;
+        display: flex !important;
     }
 
     #check__menu:checked ~ nav > ul{
